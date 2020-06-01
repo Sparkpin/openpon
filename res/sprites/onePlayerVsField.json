@@ -1,0 +1,14 @@
+{
+    "texture_filename": "res/sprites/onePlayerVsField.png",
+    "frames": [
+        {"x": 0, "y": 0, "width": 248, "height": 204},
+        {"x": 0, "y": 204, "width": 96, "height": 200},
+        {"x": 96, "y": 204, "width": 96, "height": 200}
+    ],
+    "default_animation": "field",
+    "animations": {
+        "field": [0],
+        "wallP1": [1],
+        "wallP2": [2]
+    }
+}
