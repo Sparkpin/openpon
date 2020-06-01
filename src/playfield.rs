@@ -3,7 +3,7 @@ use std::collections::VecDeque;
 use std::convert::TryFrom;
 use arrayvec::ArrayVec;
 
-use crate::panel::{Panel, PanelAnimState};
+use crate::panel::{Panel, PanelAnimState, PANEL_HEIGHT, PANEL_WIDTH};
 use crate::texture_manager::TextureManager;
 use crate::vec2::Vec2;
 
@@ -12,9 +12,6 @@ const FIELD_HEIGHT: usize = 13; // 12 + row below screen
 const BASE_STACK_RECIPROCAL_SPEED: f64 = 0.4; // seconds per pixel
 const SPEEDUP_PER_LEVEL: f64 = 0.045;
 const MAX_STACK_RECIPROCAL_SPEED: f64 = 1.0 / 60.0;
-// TODO: get this from Panel
-const PANEL_HEIGHT: i32 = 16;
-const PANEL_WIDTH: i32 = 16;
 
 pub struct Playfield {
     panels: VecDeque<[Option<Panel>; FIELD_WIDTH]>,

@@ -5,6 +5,10 @@ use std::path::Path;
 
 use crate::sprite::Sprite;
 
+// TODO: perhaps come up with something a bit better
+pub const PANEL_HEIGHT: i32 = 16;
+pub const PANEL_WIDTH: i32 = 16;
+
 #[derive(Copy, Clone)]
 pub enum PanelKind {
     Circle = 0,
